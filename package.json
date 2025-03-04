@@ -1,0 +1,45 @@
+{
+  "name": "ap-githubstars",
+  "version": "1.0.0",
+  "description": "a backend service that fetches repo information from github",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "build-watch": "tsc -w",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "prestart": "npm run build",
+    "test": "jest --testTimeout=5000"
+  },
+  "keywords": [
+    "github",
+    "repo",
+    "stars",
+    "repo-information"
+  ],
+  "author": "Adedeji Adelanwa",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
