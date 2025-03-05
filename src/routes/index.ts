@@ -70,23 +70,6 @@ router.get("/github/repos/:owner", controller.fetchGithubRepos);
  *    responses:
  *      '200':
  *        description: A successful response
- *          content:
- *            application/json:
- *              schema:
- *                type: object
- *                properties:
- *                  description:
- *                    type: string
- *                    description: description of the repo
- *                    example: this is a test repo
- *                  fullName:
- *                    type: string
- *                    description: name of the repo
- *                    example: react
- *                  starsCount:
- *                    type: integer
- *                    description: the number of stars on the repo
- *                    example: 20
  *      '404':
  *        description: Employee not found
  *      '500':

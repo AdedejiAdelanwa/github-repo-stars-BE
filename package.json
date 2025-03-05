@@ -5,12 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "prebuild": "rimraf dist",
-    "build-watch": "tsx watch src/index.ts",
+    "clean": "rimraf dist",
+    "build": "npx tsc --build tsconfig.build.json",
     "dev": "tsx watch src/index.ts",
-    "start": "node dist/index.js",
-    "prestart": "npm run build",
+    "start": "tsx  src/index.ts",
     "test": "jest --testTimeout=5000"
   },
   "keywords": [
@@ -25,12 +23,14 @@
     "@octokit/rest": "^21.1.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.9",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/swagger-jsdoc": "^6.0.4",
     "@types/swagger-ui-express": "^4.1.8",

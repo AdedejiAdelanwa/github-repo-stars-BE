@@ -1,0 +1,1 @@
+{"root":["./src/controller.ts","./src/exceptions.ts","./src/index.ts","./src/swagger-config.ts","./src/clients/index.ts","./src/clients/octokit.client.ts","./src/clients/repo.client.interface.ts","./src/configs/app.config.ts","./src/configs/index.ts","./src/routes/index.ts"],"errors":true,"version":"5.8.2"}

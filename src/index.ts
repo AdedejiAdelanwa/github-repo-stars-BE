@@ -1,6 +1,7 @@
 import express from "express";
 import { createServer } from "http";
 import router from "./routes/index";
+import cors from "cors";
 import swaggerjsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
@@ -11,6 +12,7 @@ const app = express();
 const server = createServer(app);
 
 const swaggerDocs = swaggerjsdoc(swaggerOptions);
+app.use(cors());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use("/", router);
