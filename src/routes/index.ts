@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { Controller } from "./controller";
-import { OctokitClient } from "./clients";
-import { appConfig } from "./configs";
+import { Controller } from "../controller";
+import { OctokitClient } from "../clients";
+import { appConfig } from "../configs";
 import { Octokit } from "@octokit/rest";
 
 const router = Router();

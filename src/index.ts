@@ -1,6 +1,6 @@
 import express from "express";
 import { createServer } from "http";
-import router from "./router";
+import router from "./routes/index";
 import swaggerjsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
